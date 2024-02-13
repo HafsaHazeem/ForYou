@@ -1,0 +1,133 @@
+header {
+    background-color: #da73a3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #100f0f;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0%;
+}
+
+.Question-box{
+    text-align: center;
+    margin: 25px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(29, 2, 2, 0.1);
+
+}
+
+.Question-box p {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+}
+button{
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+section div button:hover{
+    background-color: rgb(88, 162, 192);
+}
+
+/* CSS for the popping animation */
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.yes-button {
+    position: absolute;
+    animation: pop 0.5s ease-in-out infinite alternate;
+    border: none;
+    border-radius: 22px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+/* Style for the message box */
+.message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999; /* Ensure it appears on top of other elements */
+    display: none; /* Initially hidden */
+}
+
+/* Style for the GIF */
+.gif {
+    max-width: 1000px;
+    height: auto;
+}
+/*
+.romantic-background {
+    background-image: url('../images/vb.jpg'); /* Replace with the path to your romantic background image 
+    background-size: cover;
+    background-position: center;
+}*/
+.romantic-background{
+    background-image: url('../images/vb.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.popping-ily {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
